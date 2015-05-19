@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>INT222-Lab04</title>
+    <script>
+     // The result
+      function showResults(ShowOnWebPage) {
+      document.write(ShowOnWebPage);
+      }
+    </script>
+    <script>
+      var e1="", e2="", e3="", e4="", e5="", e6="", e7="", e8="", e9="", result="";
+      // *****************************************
+      // Your code starts here
+      // *****************************************
+
+      e1 = prompt("Enter your first name in lower case:", "larissa");
+      e2 = prompt("Enter an interger between 0 and 9:", "3");
+      e3 = prompt("Enter five numbers separated by commas:", "1,2,3,4,5");
+      e4 = prompt("Enter three HTML tags separated by commas:", "h1,p,hr");
+      e5 = e3.split(",");
+      e6 = e4.split(",");
+      //to uppercase
+      e1 = e1[0].toUpperCase() + e1.substring(1);
+
+      var i, total;
+      e2 = parseInt(e2);
+
+      e7 = "<style>td { border: 1px solid; }</style><table>" +
+           "<caption>Times table for e2</caption><tbody>";
+
+      for (i = 1; i <= 12; i++ ) {
+        total = e2 * i;
+        e7 += "<tr><td>" + e2 +
+              "</td><td>*</td><td>" + i +
+              "</td><td>=</td><td>" + total +
+              "</td></tr>";
+      }
+
+      e7 += "</tbody></table>";
+
+      e8 = 0;
+
+      for (var j = 0; j < e5.length; j++) {
+        e8 += parseInt(e5[j]);
+      }
+
+      e9 = "<ul>";
+
+      for (var l = 0; l < e6.length; l++) {
+        e9 += "<li>" + e6[l] + "</li>";
+      }
+
+      e9 += "</ul>";
+
+      result =
+        e1 + "<hr>" +
+        e2 + "<hr>" +
+        e3 + "<hr>" +
+        e5 + "<hr>" + // concatenate array of strings separated by comma
+        e7 + "<hr>" +
+        e8 + "<hr>" +
+        e9 + "<hr>";
+
+      // *****************************************
+      // Your ends here
+      // *****************************************
+      showResults(result);
+    </script>
+  </head>
+
+  <body>
+  </body>
+</html>
+

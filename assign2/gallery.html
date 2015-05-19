@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/normalize.css" type="text/css" />
+<link rel="stylesheet" href="css/sitecss.css" type="text/css" />
+<title>Assignment 2 ::: Gallery</title>
+
+</head>
+
+<body>
+<header>
+  <nav>
+    <ul>
+        <li><a href="../assign1/index.html">My zenit Account</a></li>
+      <li><a href="index.html" >Home</a></li>
+      <li><a href="gallery.html" class="active">Photo Gallery</a></li>
+      <li><a href="video.html">Video</a></li>
+      <li><a href="audio.html">Audio</a></li>
+      <li><a href="html5.html">HTML5</a></li>
+      <li><a href="tables.html">Tables with CSS</a></li>
+      <li><a href="mortgage/index.html">Forms</a></li>
+      <li><a href="css/sitecss.css">CSS Used</a></li>
+      <li><a href="extra/extra.html">Extra</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="row">
+
+  <div class="column1">
+    <div class="columnwrapper">
+      <h1>Photo Gallery</h1>
+      <div class="box">
+        <h2>Wonders of the World</h2>
+        <p>Various lists of the Wonders of the World have been compiled from antiquity to the present day, to catalogue the world's most spectacular natural wonders and manmade structures.</p>
+      </div>
+
+      <div class="box row">
+        <div class="wonderimg">
+          <figure>
+            <figcaption>Uncertain location</figcaption>
+            <img src="images/babylongarden.jpg" alt="Babylon Garden" />
+          </figure>
+        </div>
+        <h2>Hanging Gardens of Babylon</h2>
+        <p>The Hanging Gardens of Babylon were one of the Seven Wonders of the Ancient World, and the only one whose location has not been definitely established. Traditionally they were said to have been built in the ancient city of Babylon, near present-day Hillah, Babil province, in Iraq.</p>
+        <a href="#">Top</a>
+      </div>
+
+      <div class="box row">
+        <div class="wonderimg">
+          <figure>
+            <figcaption>Argentina/Brazil</figcaption>
+            <img src="images/iguazufalls.jpg" alt="Iguazu Falls" />
+          </figure>
+        </div>
+        <h2>Iguazu Falls</h2>
+        <p>Made up of many cascades producing vast sprays of water, it is one of the most spectacular waterfalls in the world. The surrounding subtropical rainforest has over 2,000 species of vascular plants and is home to the typical wildlife of the region: tapirs, giant anteaters, howler monkeys, ocelots, jaguars and caymans.</p>
+        <a href="#">Top</a>
+      </div>
+
+      <div class="box row">
+        <div class="wonderimg">
+          <figure>
+            <figcaption>Scotland</figcaption>
+            <img src="images/bellrock.jpg" alt="Bell Rock Lighthouse" />
+          </figure>
+        </div>
+        <h2>Bell Rock Lighthouse</h2>
+        <p>World's oldest surviving sea-washed lighthouse. It was built between 1807 and 1810 by Robert Stevenson on the Bell Rock in the North Sea, 11 miles east of the Firth of Tay.</p>
+        <a href="#">Top</a>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="column2">
+    <div class="columnwrapper">
+      <div id="recommended-links">
+        <h2>Wonders of the World</h2>
+        <ul>
+          <li><a href="http://en.wikipedia.org/wiki/Seven_Wonders_of_the_Ancient_World">Ancient</a></li>
+          <li><a href="http://en.wikipedia.org/wiki/New7Wonders_of_Nature">Nature</a></li>
+          <li><a href="http://famouswonders.com/the-seven-wonders-of-the-industrial-world/">Industrial</a></li>
+        </ul>
+
+      </div>
+      <h2>Social Media Links</h2>
+        <div style="position: relative; background: url('social-media.png') no-repeat; width: 250px; height: 140px;">
+          <!-- images on row 1 - top 3px left 4px    - increment left by 27px for the next one -->
+          <!-- images on row 2 - top 30px left 4px  - increment left by 27px for the next one -->
+          <!-- images on row 3 - top 57px left 4px - increment left by 27px for the next one -->
+          <!-- images on the next row - increment top by 27px for the next row -->
+          <a href="http://facebook.com" title="Facebook" style="width: 23px; height: 23px; border: 0; position: absolute; top: 3px; left: 4px;"></a>
+          <a href="http://twitter.com" title="Twitter" style="width: 23px; height: 23px; border: 0; position: absolute; top: 3px; left: 31px;"></a>
+          <a href="http://pinterest.com" title="Pinterest" style="width: 23px; height: 23px; border: 0; position: absolute; top: 3px; left: 58px;"></a>
+          <a href="http://plus.google.com" title="Google+" style="width: 23px; height: 23px; border: 0; position: absolute; top: 3px; left: 85px;"></a>
+          <a href="http://myspace.com" title="MySpace" style="width: 23px; height: 23px; border: 0; position: absolute; top: 3px; left: 112px;"></a>
+        </div>
+    </div>
+  </div>
+</div>
+
+<script>
+var dt=new Date(document.lastModified);   // Get document last modified date
+document.write('<footer>This page was last updated on '+dt.toLocaleString() + '</footer>');
+</script>
+</body>
+</html>

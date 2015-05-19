@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/normalize.css" type="text/css" />
+<link rel="stylesheet" href="css/sitecss.css" type="text/css" />
+<title>Assignment 2 :::: Homepage</title>
+
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="../assign1/index.html">My zenit Account</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="gallery.html">Photo Gallery</a></li>
+        <li><a href="video.html">Video</a></li>
+        <li><a href="audio.html">Audio</a></li>
+        <li><a href="html5.html">HTML5</a></li>
+        <li><a href="tables.html">Tables with CSS</a></li>
+        <li><a href="mortgage/index.html">Forms</a></li>
+        <li><a href="css/sitecss.css">CSS Used</a></li>
+        <li><a href="extra/extra.html">Extra</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="row">
+
+    <div class="column1">
+      <div class="columnwrapper">
+        <h1>INT222F - Assignment 2 Homepage</h1>
+        <div class="box">
+          <h2>HTML5 & CSS Normalize</h2>
+          <p>HTML5 is the latest evolution of the standard that defines HTML (Hyper Text Markup Language), with new elements, attributes and behaviours.</p>
+          <p>This new version is really popular because it makes possible to do things that previously required programming languages to do, like data storage and geolocation.</p>
+          <p>The tags and functionality included in HTML are defined by the World Wide Web Consortium (W3C). HTML, like software, comes out in releases.</p>
+          <p>Normalize.css is a small file that provide better cross-browser consistency in the default style of HTML elements.</p>
+          <p>It can also be used as an alternative to CSS resets. Normalize.css preserves uselful browser defaults, improves usability and helps explain the code, using comments and detailed documentation.</p>
+        </div>
+
+        <div class="box">
+          <h2>Honesty / Copyright</h2>
+          <p>I declare that this assignment is wholly my own work in accordance with Seneca Academic Policy.
+        I also declare that I did not copy any part of this assignment manually or electronically from any other source (including web sites) except for the information supplied by the INT222 instructors and / or made available in this assignment for my use; nor have I distributed any part(s) of the assignment to other students.</p>
+          <p>Signed : Larissa de Jesus Voigt</p>
+          <p>Date : March 13, 2015</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column2">
+      <div class="columnwrapper">
+        <div id="recommended-links">
+          <h2>Recommended links</h2>
+          <h3>HTML5</h3>
+          <ul>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5">Link - 1</a></li>
+            <li><a href="http://www.html5rocks.com/en/">Link - 2</a></li>
+          </ul>
+          <h3>CSS</h3>
+          <ul>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">Link - 1</a></li>
+            <li><a href="http://daneden.github.io/animate.css/">Link - 2</a></li>
+          </ul>
+          <h3>JavaScript</h3>
+          <ul>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">Link - 1</a></li>
+            <li><a href="http://eloquentjavascript.net/">Link - 2</a></li>
+          </ul>
+
+        </div>
+        <h2>Social Media Links</h2>
+        <div style="position: relative; background: url('social-media.png') no-repeat; width: 250px; height: 140px;">
+          <!-- images on row 1 - top 3px left 4px    - increment left by 27px for the next one -->
+          <!-- images on row 2 - top 30px left 4px  - increment left by 27px for the next one -->
+          <!-- images on row 3 - top 57px left 4px - increment left by 27px for the next one -->
+          <!-- images on the next row - increment top by 27px for the next row -->
+          <a href="http://facebook.com" title="Facebook" style="width: 23px; height: 23px; border: 0; position: absolute; top: 3px; left: 4px;"></a>
+          <a href="http://twitter.com" title="Twitter" style="width: 23px; height: 23px; border: 0; position: absolute; top: 3px; left: 31px;"></a>
+          <a href="http://pinterest.com" title="Pinterest" style="width: 23px; height: 23px; border: 0; position: absolute; top: 3px; left: 58px;"></a>
+          <a href="http://plus.google.com" title="Google+" style="width: 23px; height: 23px; border: 0; position: absolute; top: 3px; left: 85px;"></a>
+          <a href="http://myspace.com" title="MySpace" style="width: 23px; height: 23px; border: 0; position: absolute; top: 3px; left: 112px;"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var dt=new Date(document.lastModified);   // Get document last modified date
+    document.write('<footer>This page was last updated on '+dt.toLocaleString() + '</footer>');
+  </script>
+</body>
+</html>

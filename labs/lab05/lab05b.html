@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+    <title>Lab05b - int222_151</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://zenit.senecac.on.ca/~emile.ohan/int222/labs/lab05/lab05.css"      media="screen" />
+    <link rel="stylesheet" href="https://zenit.senecac.on.ca/~emile.ohan/int222/labs/lab05/normalize.css"  media="screen" />
+  </head>
+  <body>
+     <div id="content">
+        <div id="left">
+           <div class="leftContent">
+             <figure>
+               <figcaption> Lab05b - Audio Controls using JavaScript</figcaption>
+               <audio controls>
+                  <source src="https://zenit.senecac.on.ca/~emile.ohan/int222/labs/lab05/Track03.mp3"  type="audio/mp3" />
+                  <source src="https://zenit.senecac.on.ca/~emile.ohan/int222/labs/lab05/Track03.ogg"  type="audio/ogg" />
+                  Your browser does not support the audio tag.
+               </audio>
+             </figure>
+             <script>
+                   var audio = document.getElementsByTagName('audio')[0];
+
+                   function volume_on () {
+                      audio.volume = 0.5;
+                   }
+
+                   function volume_off () {
+                    audio.volume = 0;
+                   }
+
+                   function increment_volume() {
+                    var vol = audio.volume + 0.1;
+                    if (vol > 1) {
+                        audio.volume = 1;
+                    } else {
+                        audio.volume = vol;
+                    }
+                   }
+
+                   function decrement_volume() {
+                    var vol = audio.volume - 0.1;
+                    if (vol < 0) {
+                        audio.volume = 0;
+                    } else {
+                        audio.volume = vol;
+                    }
+                  }
+
+             </script>
+           </div>
+        </div>
+        <div id="right">
+           <div class="rightContent">
+              <p class="center">Audio Control Options</p>
+              <p class="audioControls"> <input type="button" value="      Pause        " onclick="audio.pause();" /> </p>
+              <p class="audioControls"> <input type="button" value="    Volume On      " onclick="volume_on();" /> </p>
+              <p class="audioControls"> <input type="button" value="    Volume Off     " onclick="volume_off();" /> </p>
+              <p class="audioControls"> <input type="button" value="  Increase Volume  " onclick="increment_volume();" /> </p>
+              <p class="audioControls"> <input type="button" value="  Decrease Volume  " onclick="decrement_volume();" /> </p>
+           </div>
+        </div>
+     </div>
+     <div id="clear"></div>
+     <div id="footer">
+       <footer>
+         <script>
+            var dt=new Date(document.lastModified);   // Get document last modified date
+            document.write('<hr />This page was last updated on '+dt.toLocaleString() + '<hr />');
+         </script>
+       </footer>
+      </div>
+  </body>
+</html>

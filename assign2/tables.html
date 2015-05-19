@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/normalize.css" type="text/css" />
+<link rel="stylesheet" href="css/sitecss.css" type="text/css" />
+<title>Assignment 2 :::: Tables</title>
+
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="../assign1/index.html">My zenit Account</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Photo Gallery</a></li>
+        <li><a href="video.html">Video</a></li>
+        <li><a href="audio.html">Audio</a></li>
+        <li><a href="html5.html">HTML5</a></li>
+        <li><a href="tables.html" class="active">Tables with CSS</a></li>
+        <li><a href="mortgage/index.html">Forms</a></li>
+        <li><a href="css/sitecss.css">CSS Used</a></li>
+        <li><a href="extra/extra.html">Extra</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="row">
+
+    <div class="column1">
+      <div class="columnwrapper">
+        <h1>Tables with CSS</h1>
+        <div class="box">
+          <h2>Table example using CSS</h2>
+          <table>
+            <caption>HTML table with CSS</caption>
+            <tbody>
+              <tr>
+                <td>This</td>
+                <td>Little</td>
+                <td>Pig</td>
+                <td>Went</td>
+                <td>To</td>
+                <td>Market</td>
+              </tr>
+              <tr>
+                <td colspan="2">This</td>
+                <td>Little</td>
+                <td>Pig</td>
+                <td>Went</td>
+                <td>To</td>
+              </tr>
+              <tr>
+                <td colspan="4">This</td>
+                <td rowspan="3">Little</td>
+                <td>Piggy</td>
+              </tr>
+              <tr>
+                <td rowspan="2">This</td>
+                <td>Little</td>
+                <td>Pig</td>
+                <td>Went</td>
+                <td>To</td>
+              </tr>
+              <tr>
+                <td>Little</td>
+                <td>Pig</td>
+                <td>Went</td>
+                <td>To</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="column2">
+      <div class="columnwrapper">
+        <div id="html-links">
+          <h2>New attributes in HTML5</h2>
+          <ul>
+            <li>1. caption</li>
+            <li>2. tbody</li>
+            <li>3. tr</li>
+            <li>4. td</li>
+            <li>5. colspan</li>
+            <li>6. rowspan</li>
+          </ul>
+
+        </div>
+        <h2>Social Media Links</h2>
+        <div style="position: relative; background: url('social-media.png') no-repeat; width: 250px; height: 140px;">
+          <!-- images on row 1 - top 3px left 4px    - increment left by 27px for the next one -->
+          <!-- images on row 2 - top 30px left 4px  - increment left by 27px for the next one -->
+          <!-- images on row 3 - top 57px left 4px - increment left by 27px for the next one -->
+          <!-- images on the next row - increment top by 27px for the next row -->
+          <a href="http://facebook.com" title="Facebook" style="width: 23px; height: 23px; border: 0; position: absolute; top: 3px; left: 4px;"></a>
+          <a href="http://twitter.com" title="Twitter" style="width: 23px; height: 23px; border: 0; position: absolute; top: 3px; left: 31px;"></a>
+          <a href="http://pinterest.com" title="Pinterest" style="width: 23px; height: 23px; border: 0; position: absolute; top: 3px; left: 58px;"></a>
+          <a href="http://plus.google.com" title="Google+" style="width: 23px; height: 23px; border: 0; position: absolute; top: 3px; left: 85px;"></a>
+          <a href="http://myspace.com" title="MySpace" style="width: 23px; height: 23px; border: 0; position: absolute; top: 3px; left: 112px;"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var dt=new Date(document.lastModified);   // Get document last modified date
+    document.write('<footer>This page was last updated on '+dt.toLocaleString() + '</footer>');
+  </script>
+</body>
+</html>

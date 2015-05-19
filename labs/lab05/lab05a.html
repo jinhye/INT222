@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+    <title>Lab05a - int222_151</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://zenit.senecac.on.ca/~emile.ohan/int222/labs/lab05/lab05.css"      media="screen" />
+    <link rel="stylesheet" href="https://zenit.senecac.on.ca/~emile.ohan/int222/labs/lab05/normalize.css"  media="screen" />
+  </head>
+  <body>
+     <div id="content">
+        <div id="left">
+           <div class="leftContent">
+             <figure>
+               <figcaption> Lab05a - Video Controls using JavaScript</figcaption>
+               <video controls>
+                  <source src="https://zenit.senecac.on.ca/~emile.ohan/int222/labs/lab05/NK-children-playing-guitar.mp4"  type="video/mp4" />
+                  <source src="https://zenit.senecac.on.ca/~emile.ohan/int222/labs/lab05/NK-children-playing-guitar.webm" type="video/webm" />
+                  Your browser does not support the video tag.
+               </video>
+             </figure>
+             <script>
+                   var video = document.getElementsByTagName('video')[0];
+                   function restart () {
+                     video.pause();
+                     video.currentTime = 0;
+                     video.play();
+                   }
+
+                   function enable_control () {
+                      video.controls = true;
+                   }
+
+                   function disable_control (){
+                      video.controls = false;
+                   }
+             </script>
+
+           </div>
+        </div>
+
+        <div id="right">
+           <div class="rightContent">
+              <p class="center">Video Control Options</p>
+              <p class="videoControls"> <input type="button" value="      Play       " onclick="video.play();" /> </p>
+              <p class="videoControls"> <input type="button" value="     Pause       " onclick="video.pause();" /> </p>
+              <p class="videoControls"> <input type="button" value="    Restart      " onclick="restart();" /> </p>
+              <p class="videoControls"> <input type="button" value="  Show Controls  " onclick="enable_control();" /> </p>
+              <p class="videoControls"> <input type="button" value="  Hide Controls  " onclick="disable_control();" /> </p>
+           </div>
+        </div>
+     </div>
+     <div id="clear"></div>
+     <div id="footer">
+       <footer>
+         <script>
+            var dt=new Date(document.lastModified);   // Get document last modified date
+            document.write('<hr />This page was last updated on '+dt.toLocaleString() + '<hr />');
+         </script>
+       </footer>
+      </div>
+  </body>
+</html>

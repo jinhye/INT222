@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/normalize.css" type="text/css" />
+<link rel="stylesheet" href="css/sitecss.css" type="text/css" />
+<title>Assignment 2 :::: Video</title>
+
+</head>
+
+<body>
+<header>
+  <nav>
+    <ul>
+        <li><a href="../assign1/index.html">My zenit Account</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gallery.html">Photo Gallery</a></li>
+      <li><a href="video.html" class="active">Video</a></li>
+      <li><a href="audio.html">Audio</a></li>
+      <li><a href="html5.html">HTML5</a></li>
+      <li><a href="tables.html">Tables with CSS</a></li>
+      <li><a href="mortgage/index.html">Forms</a></li>
+      <li><a href="css/sitecss.css">CSS Used</a></li>
+      <li><a href="extra/extra.html">Extra</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="row">
+
+  <div class="column1">
+    <div class="columnwrapper">
+      <h1>Video</h1>
+      <div class="box">
+        <h2>Video implementation in HTML5</h2>
+        <p>The HTML5 specification introduced the video element for the purpose of playing videos,partially replacing the object element. HTML5 video is intended by its creators to become the new standard way to show video on the web without plugins, instead of the previous de facto standard of using the proprietary Adobe Flash plugin, but has been hampered by lack of agreement as to which video coding formats should be supported in web browsers.</p>
+      </div>
+
+      <div class="box">
+        <h2>Console Tricks</h2>
+        <video src="http://media.railscasts.com/assets/episodes/videos/048-console-tricks.mp4" controls height="300px" autoplay="autoplay">
+        </video>
+        <p>The Rails console is one of my favorite tools. This episode of Rails Cast is packed with tips and tricks on how to get the most out of the console.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column2">
+    <div class="columnwrapper">
+      <h2>Video Command Options</h2>
+      <div id="buttons">
+        <ul>
+          <li><button name="button">Play</button></li>
+          <li><button name="button">Pause</button></li>
+          <li><button name="button">Restart</button></li>
+          <li><button name="button">Show Controls</button></li>
+          <li><button name="button">Remove Controls</button></li>
+        </ul>
+
+      </div>
+      <div id="redborder"></div>
+      <h2>Social Media Links</h2>
+        <div style="position: relative; background: url('social-media.png') no-repeat; width: 250px; height: 140px;">
+          <!-- images on row 1 - top 3px left 4px    - increment left by 27px for the next one -->
+          <!-- images on row 2 - top 30px left 4px  - increment left by 27px for the next one -->
+          <!-- images on row 3 - top 57px left 4px - increment left by 27px for the next one -->
+          <!-- images on the next row - increment top by 27px for the next row -->
+          <a href="http://facebook.com" title="Facebook" style="width: 23px; height: 23px; border: 0; position: absolute; top: 3px; left: 4px;"></a>
+          <a href="http://twitter.com" title="Twitter" style="width: 23px; height: 23px; border: 0; position: absolute; top: 3px; left: 31px;"></a>
+          <a href="http://pinterest.com" title="Pinterest" style="width: 23px; height: 23px; border: 0; position: absolute; top: 3px; left: 58px;"></a>
+          <a href="http://plus.google.com" title="Google+" style="width: 23px; height: 23px; border: 0; position: absolute; top: 3px; left: 85px;"></a>
+          <a href="http://myspace.com" title="MySpace" style="width: 23px; height: 23px; border: 0; position: absolute; top: 3px; left: 112px;"></a>
+        </div>
+    </div>
+  </div>
+</div>
+
+<script>
+var dt=new Date(document.lastModified);   // Get document last modified date
+document.write('<footer>This page was last updated on '+dt.toLocaleString() + '</footer>');
+</script>
+</body>
+</html>

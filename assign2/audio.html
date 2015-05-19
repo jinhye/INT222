@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/normalize.css" type="text/css" />
+<link rel="stylesheet" href="css/sitecss.css" type="text/css" />
+<title>Assignment 2 :::: Audio</title>
+
+</head>
+
+<body>
+<header>
+  <nav>
+    <ul>
+	<li><a href="../assign1/index.html">My zenit Account</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gallery.html">Photo Gallery</a></li>
+      <li><a href="video.html">Video</a></li>
+      <li><a href="audio.html" class="active">Audio</a></li>
+      <li><a href="html5.html">HTML5</a></li>
+      <li><a href="tables.html">Tables with CSS</a></li>
+      <li><a href="mortgage/index.html">Forms</a></li>
+      <li><a href="css/sitecss.css">CSS Used</a></li>
+      <li><a href="extra/extra.html">Extra</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="row">
+
+  <div class="column1">
+    <div class="columnwrapper">
+      <h1>Audio</h1>
+      <div class="box">
+        <h2>Audio implementation in HTML5</h2>
+        <p>The HTML <em>audio</em> element is used to embed sound content in documents. It may contain several audio sources, represented using the src attribute or the <em>source</em> element; the browser will choose the most suitable one.</p>
+      </div>
+
+      <div class="box">
+        <h2>Tchaikovsky - Dance of the Sugar Plum Fairy</h2>
+        <audio src="misc/sugarplum.mp3" controls="controls"></audio>
+        <p>"Dance of the Sugar Plum Fairy" is one of the most famous pieces of music ever composed, having been originally written for the ballet "The Nutcracker".</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column2">
+    <div class="columnwrapper">
+      <h2>Video Command Options</h2>
+      <div id="buttons">
+        <ul>
+          <li><button name="button">Play</button></li>
+          <li><button name="button">Pause</button></li>
+          <li><button name="button">Volume On</button></li>
+          <li><button name="button">Volume Off</button></li>
+          <li><button name="button">Increase Volume</button></li>
+          <li><button name="button">Decrease Volume</button></li>
+        </ul>
+
+      </div>
+      <div id="redborder"></div>
+      <h2>Social Media Links</h2>
+        <div style="position: relative; background: url('social-media.png') no-repeat; width: 250px; height: 140px;">
+          <!-- images on row 1 - top 3px left 4px    - increment left by 27px for the next one -->
+          <!-- images on row 2 - top 30px left 4px  - increment left by 27px for the next one -->
+          <!-- images on row 3 - top 57px left 4px - increment left by 27px for the next one -->
+          <!-- images on the next row - increment top by 27px for the next row -->
+          <a href="http://facebook.com" title="Facebook" style="width: 23px; height: 23px; border: 0; position: absolute; top: 3px; left: 4px;"></a>
+          <a href="http://twitter.com" title="Twitter" style="width: 23px; height: 23px; border: 0; position: absolute; top: 3px; left: 31px;"></a>
+          <a href="http://pinterest.com" title="Pinterest" style="width: 23px; height: 23px; border: 0; position: absolute; top: 3px; left: 58px;"></a>
+          <a href="http://plus.google.com" title="Google+" style="width: 23px; height: 23px; border: 0; position: absolute; top: 3px; left: 85px;"></a>
+          <a href="http://myspace.com" title="MySpace" style="width: 23px; height: 23px; border: 0; position: absolute; top: 3px; left: 112px;"></a>
+        </div>
+    </div>
+  </div>
+</div>
+
+<script>
+var dt=new Date(document.lastModified);   // Get document last modified date
+document.write('<footer>This page was last updated on '+dt.toLocaleString() + '</footer>');
+</script>
+</body>
+</html>

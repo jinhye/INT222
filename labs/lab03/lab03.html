@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>html &amp; CSS - Lab 3</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="lab03.css">
+  </head>
+  <body>
+    <div id="wrapper">
+      <h1>html &amp; CSS - Lab 3</h1>
+      <form action="https://zenit.senecac.on.ca/~emile.ohan/cgi-bin/echo-p.pl" method="POST" id="form">
+        <div class="section-red">
+          <div class="col-3">
+            <fieldset>
+              <legend>1. input tag - type="text"</legend>
+              <div class="form-group form-right-aligned">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name"/>
+              </div>
+              <div class="form-group form-right-aligned">
+                <label for="name">Phone No.</label>
+                <input type="text" id="phone" name="phone" value="416"/>
+              </div>
+            </fieldset>
+          </div>
+          <div class="col-3">
+            <fieldset>
+              <legend>2. input tag - type="checkbox"</legend>
+              <div class="form-group">
+                <label for="check-option-1">
+                  <input type="checkbox" checked name="check-option-1" id="check-option-1" value="check-1"/>
+                  Option 1
+                </label>
+              </div>
+              <div class="form-group">
+                <label for="check-option-2">
+                  <input type="checkbox" name="check-option-2" id="check-option-2" value="check-2"/>
+                  Option 2
+                </label>
+              </div>
+              <div class="form-group">
+                <label for="check-option-3">
+                  <input type="checkbox" name="check-option-3" id="check-option-3" value="check-3"/>
+                  Option 3
+                </label>
+              </div>
+              <div class="form-group">
+                <label for="check-option-4">
+                  <input type="checkbox" name="check-option-4" id="check-option-4" value="check-4"/>
+                  Option 4
+                </label>
+              </div>
+            </fieldset>
+          </div>
+          <div class="col-3">
+            <fieldset>
+              <legend>3. input tag - type="radio"</legend>
+                <div class="form-group">
+                  <label>
+                    <input type="radio" name="radio-option" id="radio-option-1" value="radio-1"/>
+                    Option 1
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label>
+                    <input type="radio" name="radio-option" id="radio-option-2" value="radio-2" checked/>
+                    Option 2
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label>
+                    <input type="radio" name="radio-option" id="radio-option-3" value="radio-3"/>
+                    Option 3
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label>
+                    <input type="radio" name="radio-option" id="radio-option-4" value="radio-4"/>
+                    Option 4
+                  </label>
+                </div>
+            </fieldset>
+          </div>
+        </div>
+        <div class="section-red">
+          <div class="col-3">
+            <fieldset>
+              <legend>4. select &amp; option tags</legend>
+              <select id="select" name="select" size="9">
+                <optgroup label="Group 1">
+                  <option value="select-1">Option 1</option>
+                  <option value="select-2">Option 2</option>
+                </optgroup>
+                <optgroup label="Group 2">
+                  <option value="select-3" selected>Option 3 - This one is selected</option>
+                  <option value="select-4">Option 4</option>
+                  <option value="select-5">Option 5</option>
+                </optgroup>
+              </select>
+            </fieldset>
+          </div>
+          <div class="col-3">
+            <fieldset>
+              <legend>5. textarea</legend>
+              <textarea name="textarea" id="textarea" placeholder="maxlength = 250 - no resize" maxlength="250"></textarea>
+            </fieldset>
+          </div>
+          <div class="col-3">
+            <fieldset>
+              <legend>6. New HTML5 type value</legend>
+              <div class="form-group">
+                <label for="input-6-1">6.1</label>
+                <input type="text" id="input-6-1" name="input-6-1" required placeholder="required"/>
+              </div>
+              <div class="form-group">
+                <label for="input-6-2">6.2</label>
+                <input type="date" id="input-6-2" name="input-6-2" required />
+              </div>
+              <div class="form-group">
+                <label for="input-6-3">6.3</label>
+                <input type="month" id="input-6-3" name="input-6-3" required />
+              </div>
+              <div class="form-group">
+                <label for="input-6-4">6.4</label>
+                <input type="week" id="input-6-4" name="input-6-4" required />
+              </div>
+              <div class="form-group">
+                <label for="input-6-5">6.5</label>
+                <input type="email" id="input-6-5" name="input-6-5" required placeholder="required email"/>
+              </div>
+            </fieldset>
+          </div>
+        </div>
+        <div id="submission">
+          <div>
+            <fieldset>
+              <legend>7. input type "submit" / "reset"</legend>
+              <button type="submit" name="submit" form="form">Submit</button>
+              <button type="reset" name="reset" form="form">Reset</button>
+            </fieldset>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/normalize.css" type="text/css" />
+<link rel="stylesheet" href="css/sitecss.css" type="text/css" />
+<title>Assignment 2 :::: HTML5</title>
+
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="../assign1/index.html">My zenit Account</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Photo Gallery</a></li>
+        <li><a href="video.html">Video</a></li>
+        <li><a href="audio.html">Audio</a></li>
+        <li><a href="html5.html" class="active">HTML5</a></li>
+        <li><a href="tables.html">Tables with CSS</a></li>
+        <li><a href="mortgage/index.html">Forms</a></li>
+        <li><a href="css/sitecss.css">CSS Used</a></li>
+        <li><a href="extra/extra.html">Extra</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="row">
+
+    <div class="column1">
+      <div class="columnwrapper">
+        <h1>HTML5</h1>
+        <div class="box">
+          <h2>HTML5 new form attributes</h2>
+          <p>The HTML <em>input</em> element is used to create interactive controls for web-based forms in order to accept data from the user. The semantics of an <em>input</em> varies considerably depending on the value of its type attribute.</p>
+        </div>
+
+        <div class="box">
+          <h2>How to set autofocus</h2>
+          <input type="text" name="input1" id="input1" autofocus />
+          <code>
+            &lt;input type="text" name="input1" id="input1" autofocus &gt;
+          </code>
+        </div>
+        <div class="box">
+          <h2>How to set placeholder</h2>
+          <input type="text" name="input2" id="input2" placeholder="sample text" />
+          <code>
+            &lt;input type="text" name="input2" id="input2" placeholder="sample text" &gt;
+          </code>
+        </div>
+        <div class="box">
+          <h2>How to set required</h2>
+          <input type="text" name="input3" id="input3" required />
+          <code>
+            &lt;input type="text" name="input3" id="input3" required  &gt;
+          </code>
+        </div>
+        <div class="box">
+          <h2>How to create datalist</h2>
+          <input list="browsers">
+          <datalist id="browsers">
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Internet Explorer">
+            <option value="Opera">
+            <option value="Safari">
+          </datalist>
+          <code>
+            &lt;input list="browsers"&gt;
+            &lt;datalist id="browsers"&gt;
+              &lt;option value="Chrome"&gt;
+              &lt;option value="Firefox"&gt;
+              &lt;option value="Internet Explorer"&gt;
+              &lt;option value="Opera"&gt;
+              &lt;option value="Safari"&gt;
+            &lt;/datalist&gt;
+          </code>
+        </div>
+        <div class="box">
+          <h2>How to set email format</h2>
+          <input type="email" name="input4" id="input4" />
+          <code>
+            &lt;input type="email" name="input4" id="input4"  &gt;
+          </code>
+        </div>
+        <div class="box">
+          <h2>How to set url format</h2>
+          <input type="url" name="input5" id="input5" />
+          <code>
+            &lt;input type="url" name="input5" id="input5"  &gt;
+          </code>
+        </div>
+      </div>
+    </div>
+
+    <div class="column2">
+      <div class="columnwrapper">
+        <div id="html-links">
+          <h2>New attributes in HTML5</h2>
+          <ul>
+            <li>1. Autofocus</li>
+            <li>2. Placeholder</li>
+            <li>3. Required</li>
+            <li>4. Datalist</li>
+            <li>5. E-mail</li>
+            <li>6. URL</li>
+          </ul>
+
+        </div>
+        <h2>Social Media Links</h2>
+        <div style="position: relative; background: url('social-media.png') no-repeat; width: 250px; height: 140px;">
+          <!-- images on row 1 - top 3px left 4px    - increment left by 27px for the next one -->
+          <!-- images on row 2 - top 30px left 4px  - increment left by 27px for the next one -->
+          <!-- images on row 3 - top 57px left 4px - increment left by 27px for the next one -->
+          <!-- images on the next row - increment top by 27px for the next row -->
+          <a href="http://facebook.com" title="Facebook" style="width: 23px; height: 23px; border: 0; position: absolute; top: 3px; left: 4px;"></a>
+          <a href="http://twitter.com" title="Twitter" style="width: 23px; height: 23px; border: 0; position: absolute; top: 3px; left: 31px;"></a>
+          <a href="http://pinterest.com" title="Pinterest" style="width: 23px; height: 23px; border: 0; position: absolute; top: 3px; left: 58px;"></a>
+          <a href="http://plus.google.com" title="Google+" style="width: 23px; height: 23px; border: 0; position: absolute; top: 3px; left: 85px;"></a>
+          <a href="http://myspace.com" title="MySpace" style="width: 23px; height: 23px; border: 0; position: absolute; top: 3px; left: 112px;"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var dt=new Date(document.lastModified);   // Get document last modified date
+    document.write('<footer>This page was last updated on '+dt.toLocaleString() + '</footer>');
+  </script>
+</body>
+</html>

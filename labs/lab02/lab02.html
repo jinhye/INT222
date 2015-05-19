@@ -1,0 +1,30 @@
+<!DOCTYPE html >
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>int222_151</title>
+    <script>
+      var name = prompt("Please enter your name:");
+
+      alert("Hello " + name);
+
+      var age, trimmedAge, ageInt;
+
+      do {
+          age = prompt("Please enter your age:");
+          trimmedAge = age.trim();
+          ageInt = Number(trimmedAge);
+      } while (!Number.isInteger(ageInt));
+
+      var ageInDays = (ageInt * 365) / 4;
+
+      alert(name + " , you have aproximately " + ageInDays + " days.");
+
+    </script>
+  </head>
+
+  <body>
+  </body>
+
+</html>

@@ -1,0 +1,77 @@
+html, body {
+  height: 100%;
+}
+
+h1 {
+  text-align: center;
+}
+
+fieldset {
+  border: 1px solid blue;
+}
+
+legend {
+  border: 2px solid blue;
+  padding: 5px;
+  background-color: white;
+}
+
+textarea {
+  width: 250px;
+  height: 120px;
+  resize: none;
+}
+
+button {
+  background-color: #008000;
+  border: 2px solid black;
+  margin: 10px;
+}
+
+#wrapper {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ccc;
+}
+
+.col-3 {
+  display: table-cell;
+  width: 333px;
+  padding: 10px;
+  border-right: 1px dotted black;
+}
+
+.col-3:last-child {
+  border-right: none;
+}
+
+.section-red {
+  overflow: hidden;
+  margin-bottom: 20px;
+  border: 2px solid red;
+}
+
+#submission {
+  border: 4px solid #9999BE;
+  margin: 0 auto;
+  width: 333px;
+  text-align: center;
+}
+
+#submission > div {
+  border-top: 10px solid #DADAFF;
+  border-left: 10px solid #DADAFF;
+  border-right: 10px solid #25254C;
+  border-bottom: 10px solid #25254C;
+}
+
+.form-right-aligned label {
+  display: inline-block;
+  width: 100px;
+}
+
+.form-right-aligned input {
+  margin-bottom: 10px;
+}
+
